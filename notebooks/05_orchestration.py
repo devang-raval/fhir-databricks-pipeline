@@ -14,7 +14,7 @@ print(f"Pipeline config loaded")
 print(f"Run date : {RUN_DATE}")
 print(f"Run time : {RUN_TS}")
 
-# DBTITLE 1,Metadata Logging Table
+# Metadata Logging Table
 
 # Create pipeline run log table 
 spark.sql(f"""
@@ -35,8 +35,8 @@ spark.sql(f"""
 print("Pipeline run log table ready")
 
 
-# DBTITLE 1,Logging Helper
-# Log helper 
+# Logging Helper
+
 import uuid
 
 RUN_ID = str(uuid.uuid4())[:8]
@@ -64,7 +64,7 @@ def log_run(resource, layer, status, records=0, error=None):
 print(f"Logger ready | Run ID: {RUN_ID}")
 
 
-# DBTITLE 1,Pipeline Runner
+# Pipeline Runner
 
 # Master pipeline: Patient → Encounter → Observation → Condition 
 
@@ -97,7 +97,7 @@ def fetch_and_save(resource, run_date):
         page  += 1
     return saved
 
-# -- BRONZE LAYER --
+# BRONZE LAYER
 
 # Bronze load
 
@@ -116,7 +116,7 @@ def load_bronze(resource, run_date):
     df.write.format("delta").mode("append").option("mergeSchema", "true").saveAsTable(table_name)
     return spark.table(table_name).count()
 
-# -- SILVER LAYER --
+# SILVER LAYER
 
 # Clean bronze 
 
@@ -168,6 +168,7 @@ def apply_scd2(resource, df_new):
 
 
 # Run pipeline 
+
 def run_pipeline():
     print(f"\n{'='*55}")
     print(f"FHIR PIPELINE START | {RUN_DATE} | Run: {RUN_ID}")
@@ -219,10 +220,8 @@ def run_pipeline():
 
 run_pipeline()
 
-# COMMAND ----------
-
-# DBTITLE 1,View Pipeline Log
 # Show pipeline run log 
+
 print(f"Pipeline Run Log (Run ID: {RUN_ID})\n")
 display(
     spark.table(f"{CATALOG}.{DATABASE}.pipeline_run_log")
