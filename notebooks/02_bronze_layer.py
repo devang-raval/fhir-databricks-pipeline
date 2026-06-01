@@ -14,7 +14,7 @@ RUN_DATE   = datetime.today().strftime("%Y-%m-%d")
 
 print(f"Config loaded | Run date: {RUN_DATE}")
 
-# DBTITLE 1,Bronze Load Function
+# Bronze Load Function
 
 # Function to load raw JSON → Bronze Delta table
 def load_bronze(resource: str, run_date: str):
@@ -55,7 +55,8 @@ def load_bronze(resource: str, run_date: str):
 print("Bronze function : ready")
 
 
-# DBTITLE 1,Run Bronze Load
+# Run Bronze Load
+
 # Run for all resources
 print(f"Starting Bronze layer load for {RUN_DATE}\n")
 
@@ -67,7 +68,8 @@ for resource in RESOURCES:
 
 print(f"\n Bronze layer complete!")
 
-# DBTITLE 1, Varify
+# Varify
+
 # Quick verification 
 
 for resource in RESOURCES:
