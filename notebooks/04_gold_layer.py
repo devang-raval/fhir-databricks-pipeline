@@ -11,8 +11,8 @@ DATABASE  = "fhir_db"
 print("Config loaded")
 
 
-# DBTITLE 1,Gold Patient
-# Gold: Patient
+# Gold Patient
+
 spark.sql(f"""
     CREATE OR REPLACE VIEW {CATALOG}.{DATABASE}.gold_patient AS
     SELECT
@@ -35,8 +35,8 @@ count = spark.sql(f"SELECT COUNT(*) as cnt FROM {CATALOG}.{DATABASE}.gold_patien
 print(f"gold_patient view created → {count} records")
 
 
-# DBTITLE 1,Gold Encounter
-# Gold: Encounter 
+# Gold Encounter
+
 spark.sql(f"""
     CREATE OR REPLACE VIEW {CATALOG}.{DATABASE}.gold_encounter AS
     SELECT
@@ -57,10 +57,8 @@ spark.sql(f"""
 count = spark.sql(f"SELECT COUNT(*) as cnt FROM {CATALOG}.{DATABASE}.gold_encounter").collect()[0]["cnt"]
 print(f"✅ gold_encounter view created → {count} records")
 
-# COMMAND ----------
+# Gold Observation
 
-# DBTITLE 1,Gold Observation
-# Gold: Observation
 spark.sql(f"""
     CREATE OR REPLACE VIEW {CATALOG}.{DATABASE}.gold_observation AS
     SELECT
@@ -85,8 +83,8 @@ count = spark.sql(f"SELECT COUNT(*) as cnt FROM {CATALOG}.{DATABASE}.gold_observ
 print(f"gold_observation view created → {count} records")
 
 
-# DBTITLE 1,Gold Condition
 # Gold: Condition 
+
 spark.sql(f"""
     CREATE OR REPLACE VIEW {CATALOG}.{DATABASE}.gold_condition AS
     SELECT
@@ -112,11 +110,12 @@ count = spark.sql(f"SELECT COUNT(*) as cnt FROM {CATALOG}.{DATABASE}.gold_condit
 print(f"gold_condition view created → {count} records")
 
 
-# DBTITLE 1,Verify All Gold Views
+# Verify All Gold Views
+
 # Final verification
 gold_views = ["gold_patient", "gold_encounter", "gold_observation", "gold_condition"]
 
-print("📊 Gold Layer Summary:\n")
+print("Gold Layer Summary:\n")
 for view in gold_views:
     df    = spark.sql(f"SELECT * FROM {CATALOG}.{DATABASE}.{view} LIMIT 1")
     count = spark.sql(f"SELECT COUNT(*) as cnt FROM {CATALOG}.{DATABASE}.{view}").collect()[0]["cnt"]
