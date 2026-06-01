@@ -62,7 +62,7 @@ fhir-databricks-pipeline/
 │   ├── 03_silver_layer.py        # Clean, deduplicate + SCD Type 2
 │   ├── 04_gold_layer.py          # Reporting views
 │   ├── 05_orchestration.py       # Master pipeline with run logging
-├── documents/
+├── Documentation/
 │   └── Pipeline Execution Report.md # 3-day run results
 └── README.md
 ```
