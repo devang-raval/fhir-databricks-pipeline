@@ -85,7 +85,7 @@ FHIR API (hapi.fhir.org/baseR4)
 | condition | bronze | SUCCESS | 180 | 02:55:47 | 02:58:04 |
 | condition | silver | SUCCESS | 60 | 02:55:47 | 02:58:09 |
 
-**Run Duration:** ~2 min 22 sec | **Success Rate:** 12/12 ✅
+**Run Duration:** ~2 min 22 sec | **Success Rate:** 12/12
 
 ---
 
@@ -106,7 +106,7 @@ FHIR API (hapi.fhir.org/baseR4)
 | condition | bronze | SUCCESS | 240 | 02:59:18 | 03:00:38 |
 | condition | silver | SUCCESS | 60 | 02:59:18 | 03:00:44 |
 
-**Run Duration:** ~1 min 26 sec | **Success Rate:** 12/12 ✅
+**Run Duration:** ~1 min 26 sec | **Success Rate:** 12/12
 
 ---
 
@@ -127,7 +127,7 @@ FHIR API (hapi.fhir.org/baseR4)
 | condition | bronze | SUCCESS | 300 | 03:01:35 | 03:02:45 |
 | condition | silver | SUCCESS | 60 | 03:01:35 | 03:02:51 |
 
-**Run Duration:** ~1 min 16 sec | **Success Rate:** 12/12 ✅
+**Run Duration:** ~1 min 16 sec | **Success Rate:** 12/12
 
 ---
 
