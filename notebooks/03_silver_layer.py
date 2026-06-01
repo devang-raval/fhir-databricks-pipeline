@@ -1,4 +1,3 @@
-# DBTITLE 1,Config
 # 03_silver_layer.py
 # Cleans, deduplicates and applies SCD Type 2 versioning
 
@@ -15,7 +14,8 @@ RUN_DATE   = datetime.today().strftime("%Y-%m-%d")
 print(f"Config loaded | Run date: {RUN_DATE}")
 
 
-# DBTITLE 1,Clean & Deduplicate Function
+# Clean & Deduplicate Function
+
 # Clean and deduplicate incoming bronze data
 def clean_bronze(resource: str):
     bronze_table = f"{CATALOG}.{DATABASE}.bronze_{resource}"
@@ -41,7 +41,8 @@ def clean_bronze(resource: str):
 print("Clean function ready")
 
 
-# DBTITLE 1,SCD Type 2 Function
+# SCD Type 2 Function
+
 # SCD Type 2 upsert into silver table
 from delta.tables import DeltaTable
 
@@ -132,7 +133,8 @@ def apply_scd2(resource: str, df_new):
 print("SCD2 function ready")
 
 
-# DBTITLE 1,Run Silver Layer
+# Run Silver Layer
+
 # Run clean + SCD2 for all resources
 print(f"Starting Silver layer for {RUN_DATE}\n")
 
@@ -147,7 +149,8 @@ for resource in RESOURCES:
 print(f"\n Silver layer complete!")
 
 
-# DBTITLE 1,Verify
+# Verify
+
 # Verify silver tables
 for resource in RESOURCES:
     table = f"{CATALOG}.{DATABASE}.silver_{resource}"
