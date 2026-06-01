@@ -56,9 +56,8 @@ def fetch_and_save(resource: str, run_date: str):
 
 print("Fetch function ready")
 
-# COMMAND ----------
-
 # DBTITLE 1,Run ingestion
+
 # Run for all resources
 all_saved = {}
 
