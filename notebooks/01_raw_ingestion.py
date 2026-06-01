@@ -18,7 +18,7 @@ RUN_DATE    = datetime.today().strftime("%Y-%m-%d")
 print(f"Config loaded | Run Date: {RUN_DATE}")
 
 
-# DBTITLE 1,Ingestion Function
+# Ingestion Function
 
 # Fetch and save raw JSON Data
 def fetch_and_save(resource: str, run_date: str):
@@ -56,7 +56,7 @@ def fetch_and_save(resource: str, run_date: str):
 
 print("Fetch function ready")
 
-# DBTITLE 1,Run ingestion
+# Run ingestion
 
 # Run for all resources
 all_saved = {}
