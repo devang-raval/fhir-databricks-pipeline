@@ -19,7 +19,7 @@ This report documents the successful execution of the FHIR API Data Ingestion & 
 | Total API Pages Fetched | 9 per resource (3 days × 3 pages) |
 | Total Raw Records Ingested | 60 per resource per day |
 | Pipeline Success Rate | 100% |
-| SCD Type 2 Changes Detected | ✅ Yes (patient, observation) |
+| SCD Type 2 Changes Detected | Yes (patient, observation) |
 
 ---
 
@@ -72,18 +72,18 @@ FHIR API (hapi.fhir.org/baseR4)
 
 | Resource | Layer | Status | Records Loaded | Started | Completed |
 |---|---|---|---|---|---|
-| patient | raw | ✅ SUCCESS | 3 pages | 02:55:47 | 02:55:56 |
-| patient | bronze | ✅ SUCCESS | 180 | 02:55:47 | 02:56:43 |
-| patient | silver | ✅ SUCCESS | 64 | 02:55:47 | 02:57:00 |
-| encounter | raw | ✅ SUCCESS | 3 pages | 02:55:47 | 02:57:10 |
-| encounter | bronze | ✅ SUCCESS | 180 | 02:55:47 | 02:57:17 |
-| encounter | silver | ✅ SUCCESS | 60 | 02:55:47 | 02:57:24 |
-| observation | raw | ✅ SUCCESS | 3 pages | 02:55:47 | 02:57:31 |
-| observation | bronze | ✅ SUCCESS | 180 | 02:55:47 | 02:57:39 |
-| observation | silver | ✅ SUCCESS | 61 | 02:55:47 | 02:57:49 |
-| condition | raw | ✅ SUCCESS | 3 pages | 02:55:47 | 02:57:57 |
-| condition | bronze | ✅ SUCCESS | 180 | 02:55:47 | 02:58:04 |
-| condition | silver | ✅ SUCCESS | 60 | 02:55:47 | 02:58:09 |
+| patient | raw | SUCCESS | 3 pages | 02:55:47 | 02:55:56 |
+| patient | bronze | SUCCESS | 180 | 02:55:47 | 02:56:43 |
+| patient | silver | SUCCESS | 64 | 02:55:47 | 02:57:00 |
+| encounter | raw | SUCCESS | 3 pages | 02:55:47 | 02:57:10 |
+| encounter | bronze | SUCCESS | 180 | 02:55:47 | 02:57:17 |
+| encounter | silver | SUCCESS | 60 | 02:55:47 | 02:57:24 |
+| observation | raw | SUCCESS | 3 pages | 02:55:47 | 02:57:31 |
+| observation | bronze | SUCCESS | 180 | 02:55:47 | 02:57:39 |
+| observation | silver | SUCCESS | 61 | 02:55:47 | 02:57:49 |
+| condition | raw | SUCCESS | 3 pages | 02:55:47 | 02:57:57 |
+| condition | bronze | SUCCESS | 180 | 02:55:47 | 02:58:04 |
+| condition | silver | SUCCESS | 60 | 02:55:47 | 02:58:09 |
 
 **Run Duration:** ~2 min 22 sec | **Success Rate:** 12/12 ✅
 
@@ -93,18 +93,18 @@ FHIR API (hapi.fhir.org/baseR4)
 
 | Resource | Layer | Status | Records Loaded | Started | Completed |
 |---|---|---|---|---|---|
-| patient | raw | ✅ SUCCESS | 3 pages | 02:59:18 | 02:59:23 |
-| patient | bronze | ✅ SUCCESS | 240 | 02:59:18 | 02:59:29 |
-| patient | silver | ✅ SUCCESS | 64 | 02:59:18 | 02:59:34 |
-| encounter | raw | ✅ SUCCESS | 3 pages | 02:59:18 | 02:59:43 |
-| encounter | bronze | ✅ SUCCESS | 240 | 02:59:18 | 02:59:50 |
-| encounter | silver | ✅ SUCCESS | 60 | 02:59:18 | 02:59:56 |
-| observation | raw | ✅ SUCCESS | 3 pages | 02:59:18 | 03:00:02 |
-| observation | bronze | ✅ SUCCESS | 240 | 02:59:18 | 03:00:16 |
-| observation | silver | ✅ SUCCESS | 61 | 02:59:18 | 03:00:23 |
-| condition | raw | ✅ SUCCESS | 3 pages | 02:59:18 | 03:00:30 |
-| condition | bronze | ✅ SUCCESS | 240 | 02:59:18 | 03:00:38 |
-| condition | silver | ✅ SUCCESS | 60 | 02:59:18 | 03:00:44 |
+| patient | raw | SUCCESS | 3 pages | 02:59:18 | 02:59:23 |
+| patient | bronze | SUCCESS | 240 | 02:59:18 | 02:59:29 |
+| patient | silver | SUCCESS | 64 | 02:59:18 | 02:59:34 |
+| encounter | raw | SUCCESS | 3 pages | 02:59:18 | 02:59:43 |
+| encounter | bronze | SUCCESS | 240 | 02:59:18 | 02:59:50 |
+| encounter | silver | SUCCESS | 60 | 02:59:18 | 02:59:56 |
+| observation | raw | SUCCESS | 3 pages | 02:59:18 | 03:00:02 |
+| observation | bronze | SUCCESS | 240 | 02:59:18 | 03:00:16 |
+| observation | silver | SUCCESS | 61 | 02:59:18 | 03:00:23 |
+| condition | raw | SUCCESS | 3 pages | 02:59:18 | 03:00:30 |
+| condition | bronze | SUCCESS | 240 | 02:59:18 | 03:00:38 |
+| condition | silver | SUCCESS | 60 | 02:59:18 | 03:00:44 |
 
 **Run Duration:** ~1 min 26 sec | **Success Rate:** 12/12 ✅
 
@@ -114,18 +114,18 @@ FHIR API (hapi.fhir.org/baseR4)
 
 | Resource | Layer | Status | Records Loaded | Started | Completed |
 |---|---|---|---|---|---|
-| patient | raw | ✅ SUCCESS | 3 pages | 03:01:35 | 03:01:40 |
-| patient | bronze | ✅ SUCCESS | 300 | 03:01:35 | 03:01:48 |
-| patient | silver | ✅ SUCCESS | 64 | 03:01:35 | 03:01:53 |
-| encounter | raw | ✅ SUCCESS | 3 pages | 03:01:35 | 03:01:59 |
-| encounter | bronze | ✅ SUCCESS | 300 | 03:01:35 | 03:02:06 |
-| encounter | silver | ✅ SUCCESS | 60 | 03:01:35 | 03:02:10 |
-| observation | raw | ✅ SUCCESS | 3 pages | 03:01:35 | 03:02:18 |
-| observation | bronze | ✅ SUCCESS | 300 | 03:01:35 | 03:02:24 |
-| observation | silver | ✅ SUCCESS | 61 | 03:01:35 | 03:02:32 |
-| condition | raw | ✅ SUCCESS | 3 pages | 03:01:35 | 03:02:38 |
-| condition | bronze | ✅ SUCCESS | 300 | 03:01:35 | 03:02:45 |
-| condition | silver | ✅ SUCCESS | 60 | 03:01:35 | 03:02:51 |
+| patient | raw | SUCCESS | 3 pages | 03:01:35 | 03:01:40 |
+| patient | bronze | SUCCESS | 300 | 03:01:35 | 03:01:48 |
+| patient | silver | SUCCESS | 64 | 03:01:35 | 03:01:53 |
+| encounter | raw | SUCCESS | 3 pages | 03:01:35 | 03:01:59 |
+| encounter | bronze | SUCCESS | 300 | 03:01:35 | 03:02:06 |
+| encounter | silver | SUCCESS | 60 | 03:01:35 | 03:02:10 |
+| observation | raw | SUCCESS | 3 pages | 03:01:35 | 03:02:18 |
+| observation | bronze | SUCCESS | 300 | 03:01:35 | 03:02:24 |
+| observation | silver | SUCCESS | 61 | 03:01:35 | 03:02:32 |
+| condition | raw | SUCCESS | 3 pages | 03:01:35 | 03:02:38 |
+| condition | bronze | SUCCESS | 300 | 03:01:35 | 03:02:45 |
+| condition | silver | SUCCESS | 60 | 03:01:35 | 03:02:51 |
 
 **Run Duration:** ~1 min 16 sec | **Success Rate:** 12/12 ✅
 
@@ -137,10 +137,10 @@ FHIR API (hapi.fhir.org/baseR4)
 
 | Resource | After Day 1 | After Day 2 | After Day 3 | Total Growth |
 |---|---|---|---|---|
-| patient | 180 | 240 | 300 | +60/day ✅ |
-| encounter | 180 | 240 | 300 | +60/day ✅ |
-| observation | 180 | 240 | 300 | +60/day ✅ |
-| condition | 180 | 240 | 300 | +60/day ✅ |
+| patient | 180 | 240 | 300 | +60/day |
+| encounter | 180 | 240 | 300 | +60/day |
+| observation | 180 | 240 | 300 | +60/day |
+| condition | 180 | 240 | 300 | +60/day |
 
 > Bronze layer uses **append mode** — each daily run adds 60 new records, preserving full ingestion history.
 
@@ -148,9 +148,9 @@ FHIR API (hapi.fhir.org/baseR4)
 
 | Resource | Current Records | SCD Changes Detected |
 |---|---|---|
-| patient | 64 | ✅ Yes — 4 new versions created |
+| patient | 64 | Yes — 4 new versions created |
 | encounter | 60 | No changes detected |
-| observation | 61 | ✅ Yes — 1 new version created |
+| observation | 61 | Yes — 1 new version created |
 | condition | 60 | No changes detected |
 
 > Silver layer maintains **only current records** via `is_current = true` filter, with full version history preserved.
@@ -240,20 +240,20 @@ gold_observation
 
 | Requirement | Status |
 |---|---|
-| ✅ Fetch data incrementally for 2–3 days with pagination | 3 days × 3 pages |
-| ✅ Store raw JSON as-is in Lakehouse | Date-bucketed folders |
-| ✅ Convert JSON → Delta Tables (Bronze) | 4 Delta tables |
-| ✅ Add `extraction_timestamp` metadata column | All tables |
-| ✅ Add `api_url_or_params` metadata column | All tables |
-| ✅ SCD Type 2 versioning | silver_* tables |
-| ✅ Raw Layer (date-bucketed folder structure) | 36 JSON files |
-| ✅ Bronze Layer (Delta + metadata) | 300 records/resource |
-| ✅ Silver Layer (clean + deduplicate) | 60-64 current records |
-| ✅ Gold Layer (reporting views) | 4 live views |
-| ✅ Pipeline orchestration (Patient→Encounter→Observation→Condition) | 05_orchestration.py |
-| ✅ Metadata logging | pipeline_run_log table |
-| ✅ Modular & no hardcoding | All notebooks |
-| ✅ Documentation | README + docs |
+| Fetch data incrementally for 2–3 days with pagination | 3 days × 3 pages |
+| Store raw JSON as-is in Lakehouse | Date-bucketed folders |
+| Convert JSON → Delta Tables (Bronze) | 4 Delta tables |
+| Add `extraction_timestamp` metadata column | All tables |
+| Add `api_url_or_params` metadata column | All tables |
+| SCD Type 2 versioning | silver_* tables |
+| Raw Layer (date-bucketed folder structure) | 36 JSON files |
+| Bronze Layer (Delta + metadata) | 300 records/resource |
+| Silver Layer (clean + deduplicate) | 60-64 current records |
+| Gold Layer (reporting views) | 4 live views |
+| Pipeline orchestration (Patient→Encounter→Observation→Condition) | 05_orchestration.py |
+| Metadata logging | pipeline_run_log table |
+| Modular & no hardcoding | All notebooks |
+| Documentation | README + docs |
 
 ---
 
