@@ -33,7 +33,7 @@ FHIR API (hapi.fhir.org/baseR4)
 │              RAW LAYER                  │
 │  /raw/{resource}/{date}/page_00N.json   │
 │  Patient | Encounter | Observation |    │
-│  Condition × 3 pages × 3 days          │
+│  Condition × 3 pages × 3 days           │
 └──────────────────┬──────────────────────┘
                    │
                    ▼
