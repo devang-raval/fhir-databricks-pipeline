@@ -1,4 +1,3 @@
-# Databricks notebook source
 # DBTITLE 1,Config
 # 03_silver_layer.py
 # Cleans, deduplicates and applies SCD Type 2 versioning
